@@ -35,6 +35,7 @@ function removeProductCart(productId) {
   saveLocalStorage("cart", productAmount);
   updatePurchasePrice();
   productCartRender();
+  cartCounter();
 }
 
 function increaseAmountProduct(productId) {
@@ -42,7 +43,7 @@ function increaseAmountProduct(productId) {
   saveLocalStorage("cart", productAmount);
   updatePurchasePrice();
   updateAmoutProduct(productId);
-}
+  }
 
 function decreaseAmountProduct(productId) {
   if (productAmount[productId] === 1) {
@@ -53,7 +54,7 @@ function decreaseAmountProduct(productId) {
   saveLocalStorage("cart", productAmount);
   updatePurchasePrice();
   updateAmoutProduct(productId);
-}
+  }
 
 function updateAmoutProduct(productId) {
   document.getElementById(`amount-${productId}`).innerText =
@@ -133,6 +134,7 @@ export function addProduct(productId) {
   saveLocalStorage("cart", productAmount);
   createProductCart(productId);
   updatePurchasePrice();
+  cartCounter();
 }
 
 export function updatePurchasePrice() {
@@ -146,4 +148,13 @@ export function updatePurchasePrice() {
   purchasePrice.innerText = `Total: R$${parseFloat(totalPrice)
     .toFixed(2)
     .replace(".", ",")}`;
+}
+
+export function cartCounter() {
+  const purchaseCounter = document.getElementById("product-amount-counter");
+  let productCounter = 0;
+  for (const productId in productAmount) {
+    productCounter += catalog.find((p) => p.id === productId).amount;
+  }
+  purchaseCounter.innerText = `${productCounter}`
 }

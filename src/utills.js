@@ -5,6 +5,7 @@ export const catalog = [
     publisher: "Estúdio Armon",
     price: 32.9,
     productImg: "camu-camu.jpg",
+    amount: 1,
   },
   {
     id: "2",
@@ -12,6 +13,7 @@ export const catalog = [
     publisher: "Estúdio Armon",
     price: 29.9,
     productImg: "combo-fada-mortifera-01.jpg",
+    amount: 1,
   },
   {
     id: "3",
@@ -19,6 +21,7 @@ export const catalog = [
     publisher: "Estúdio Armon",
     price: 29.9,
     productImg: "combo-fada-mortifera-02.jpg",
+    amount: 1,
   },
   {
     id: "4",
@@ -26,6 +29,7 @@ export const catalog = [
     publisher: "Estúdio Armon",
     price: 56.9,
     productImg: "combo-tobias-salazar.jpg",
+    amount: 1,
   },
   {
     id: "5",
@@ -33,6 +37,7 @@ export const catalog = [
     publisher: "Estúdio Armon",
     price: 18.9,
     productImg: "cotoco.jpg",
+    amount: 1,
   },
   {
     id: "6",
@@ -40,6 +45,7 @@ export const catalog = [
     publisher: "Estúdio Armon",
     price: 14.9,
     productImg: "era-uma-vez-na-lua-azul.jpg",
+    amount: 1,
   },
   {
     id: "7",
@@ -47,6 +53,7 @@ export const catalog = [
     publisher: "Estúdio Armon",
     price: 31.9,
     productImg: "escarra-brasa.jpg",
+    amount: 1,
   },
   {
     id: "8",
@@ -54,6 +61,7 @@ export const catalog = [
     publisher: "Estúdio Armon",
     price: 23.9,
     productImg: "oxente-vol-1.jpg",
+    amount: 1,
   },
   {
     id: "9",
@@ -61,6 +69,7 @@ export const catalog = [
     publisher: "Estúdio Armon",
     price: 26.9,
     productImg: "oxente-vol-2.jpg",
+    amount: 1,
   },
   {
     id: "10",
@@ -68,6 +77,7 @@ export const catalog = [
     publisher: "Estúdio Armon",
     price: 19.9,
     productImg: "penumbra.jpg",
+    amount: 1,
   },
   {
     id: "11",
@@ -75,6 +85,7 @@ export const catalog = [
     publisher: "Estúdio Armon",
     price: 23.9,
     productImg: "sideral-vol-1.jpg",
+    amount: 1,
   },
   {
     id: "12",
@@ -82,6 +93,7 @@ export const catalog = [
     publisher: "Estúdio Armon",
     price: 29.9,
     productImg: "sideral-vol-2.jpg",
+    amount: 1,
   },
 ];
 
