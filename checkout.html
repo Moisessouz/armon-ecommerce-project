@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Armon Shop</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;600&family=Jost:wght@300;400;500;700&family=Oxanium:wght@300;400;700&family=Poppins:wght@300;500;600&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="flex flex-col h-screen">
+    <header
+      class="flex bg-blue-900 shadow-md shadow-slate-700/75 p-2 justify-between sticky top-0 z-10"
+    >
+      <nav>
+        <a href="./">
+          <img
+            src="./assets/img/logo-icon.jpg"
+            alt="Logo Estúdio Armon"
+            class="h-12 hover:scale-110 duration-300"
+          />
+        </a>
+      </nav>
+    </header>
+
+    <form class="flex w-100 px-5 py-10 gap-4 grow">
+      <section id="user-data" class="w-1/3 bg-slate-700 rounded-lg">
+        <p class="text-center py-4 text-slate-200 text-xl uppercase font-bold">
+          <i class="fa-solid fa-circle-dollar-to-slot"></i>
+          Dados do Usuário
+        </p>
+        <hr />
+        <div class="flex flex-col px-6 py-3">
+          <label for="user-name" class="font-bold text-sm mb-2 text-slate-200"
+            ><i class="fa-solid fa-user fa-sm px-2"></i>Nome</label
+          >
+          <input
+            type="text"
+            id="user-name"
+            class="rounded-sm p-1"
+            placeholder="Digite seu nome..."
+            required
+          />
+        </div>
+
+        <div class="flex flex-col px-6 py-3">
+          <label for="user-email" class="font-bold text-sm mb-2 text-slate-200"
+            ><i class="fa-solid fa-envelope fa-sm px-2"></i>E-mail</label
+          >
+          <input
+            type="email"
+            id="user-email"
+            class="rounded-sm p-1"
+            pattern="teste@email.com"
+            size="30"
+            placeholder="exemplo@email.com"
+            required
+          />
+        </div>
+
+        <div class="flex flex-col px-6 py-3">
+          <label for="user-name" class="font-bold text-sm mb-2 text-slate-200"
+            ><i class="fa-solid fa-phone fa-sm px-2"></i>Telefone</label
+          >
+          <input
+            type="tel"
+            id="user-phone"
+            class="rounded-sm p-1"
+            placeholder="(xx) xxxxx-xxxx"
+            required
+          />
+        </div>
+      </section>
+
+      <section id="payment-data" class="w-1/3 bg-slate-700 rounded-lg">
+        <p class="text-center py-4 text-slate-200 text-xl uppercase font-bold">
+            <i class="fa-solid fa-circle-dollar-to-slot px-2"></i>
+          Pagamento e Entrega
+        </p>
+        <hr />
+        <div class="flex flex-col px-6 py-3">
+          <label for="credit-card" class="font-bold text-sm mb-2 text-slate-200"
+            ><i class="fa-solid fa-credit-card fa-sm px-2"></i>Número do
+            Cartão</label
+          >
+          <input
+            type="text"
+            inputmode="numeric"
+            id="credit-card"
+            class="rounded-sm p-1"
+            placeholder="xxxx-xxxx-xxxx-xxxx"
+            required
+          />
+        </div>
+
+        <div class="flex">
+          <div class="flex flex-col px-6 py-3 w-1/2">
+            <label for="cvv" class="font-bold text-sm mb-2 text-slate-200"
+              ><i class="fa-solid fa-credit-card fa-sm px-2"></i>CVV</label
+            >
+            <input
+              type="text"
+              inputmode="numeric"
+              id="cvv"
+              class="rounded-sm p-1"
+              placeholder="xxx"
+              required
+            />
+          </div>
+
+          <div class="flex flex-col px-6 py-3 w-1/2">
+            <label
+              for="card-expiration"
+              class="font-bold text-sm mb-2 text-slate-200"
+              ><i class="fa-solid fa-calendar-days fa-sm px-2"></i
+              >Validade</label
+            >
+            <input
+              type="text"
+              inputmode="numeric"
+              id="card-expiration"
+              class="rounded-sm p-1"
+              placeholder="Mês/Ano"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="flex flex-col px-6 py-3">
+          <label for="user-adress" class="font-bold text-sm mb-2 text-slate-200"
+            ><i class="fa-solid fa-house-user fa-sm px-2"></i>Endereço</label
+          >
+          <input
+            type="text"
+            id="user-adress"
+            class="rounded-sm p-1"
+            placeholder="Digite seu endereço..."
+            required
+          />
+        </div>
+
+        <div class="flex">
+          <div class="flex flex-col px-6 py-3 w-1/2">
+            <label
+              for="adress-number"
+              class="font-bold text-sm mb-2 text-slate-200"
+              ><i class="fa-solid fa-hashtag fa-sm px-2"></i>Número</label
+            >
+            <input
+              type="text"
+              inputmode="numeric"
+              id="adress-number"
+              class="rounded-sm p-1"
+              placeholder="Número..."
+              required
+            />
+          </div>
+          <div class="flex flex-col px-6 py-3 w-1/2">
+            <label
+              for="complement"
+              class="font-bold text-sm mb-2 text-slate-200"
+              ><i class="fa-solid fa-circle-info fa-sm px-2"></i
+              >Complemento</label
+            >
+            <input
+              type="text"
+              id="complement"
+              class="rounded-sm p-1"
+              placeholder="Complemento..."
+              required
+            />
+          </div>
+        </div>
+
+        <div class="flex flex-col px-6 py-3">
+          <label for="ward" class="font-bold text-sm mb-2 text-slate-200"
+            ><i class="fa-solid fa-map-location fa-sm px-2"></i>Bairro</label
+          >
+          <input
+            type="text"
+            id="ward"
+            class="rounded-sm p-1"
+            placeholder="Bairro..."
+            required
+          />
+        </div>
+
+        <div class="flex">
+          <div class="flex flex-col px-6 py-3 w-1/2">
+            <label for="city" class="font-bold text-sm mb-2 text-slate-200"
+              ><i class="fa-solid fa-city fa-sm px-2"></i>Cidade</label
+            >
+            <input
+              type="text"
+              id="city"
+              class="rounded-sm p-1"
+              placeholder="Cidade..."
+              required
+            />
+          </div>
+          <div class="flex flex-col px-6 py-3 w-1/2">
+            <label for="cep" class="font-bold text-sm mb-2 text-slate-200"
+              ><i class="fa-solid fa-location-dot fa-sm px-2"></i>CEP</label
+            >
+            <input
+              type="text"
+              id="cep"
+              inputmode="numeric"
+              class="rounded-sm p-1"
+              placeholder="xxxxx-xxx"
+              required
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="checkout-products" class="w-1/3 bg-slate-700 rounded-lg">
+        <section id="container-purchase-list" class="flex flex-col items-center h-4/5 overflow-auto px-6 py-6">
+        </section>
+        <section id="checkout-cell" class="flex flex-col px-2 h-1/5 justify-around text-slate-200">
+            <div class="flex items-center gap-2 m-4">
+                <i class="fa-solid fa-sack-dollar text-sm"></i>
+                <p id="total-price" class="text-lg"></p>
+              </div>
+              <button id="finish-purchase" type="submit"
+                class="bg-slate-200 text-slate-900 p-2 hover:bg-green-500 hover:text-slate-200 rounded-lg mb-10"
+              >
+                Finalizar Compra <i class="fa-solid fa-check fa-lg"></i>
+              </button>
+        </section>
+      </section>
+    </form>
+    <script type="module" src="./checkout.js"></script>
+  </body>
+</html>
